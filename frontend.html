@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sectional Properties Calculator</title>
+    <link rel="stylesheet" href="frontend.css">
+</head>
+
+
+<body>
+    
+    <div class="topnav">
+        <a href="input_data.html">Input Data</a>
+        <a class="active" href="active">Sectional Properties</a>
+        <a href="load_calculations.html">Load Calculations</a>
+        <a href="temperature_stresses.html">Temperature Stresses</a>
+    </div>
+    
+    <div class="wrapper">
+        <div class="container">
+            <h1>Sectional Properties Calculator</h1>
+            
+            
+            <img class="boxgirder" align="right" src="cross section.png" alt="Sorry! Image Not Found!!" height="200" width="270">
+            
+            <div>
+                <label for="Total depth of structure">Total depth of structure:</label>
+                <input type="number" id="Total depth of structure" placeholder="Total depth of structure" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Total depth of structure at L/2">Total depth of structure at L/2:</label>
+                <input type="number" id="Total depth of structure at L/2" placeholder="Total depth of structure at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of the bottom flange">Width of the bottom flange:</label>
+                <input type="number" id="Width of the bottom flange" placeholder="Width of the bottom flange" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of the bottom flange at L/2">Width of the bottom flange at L/2:</label>
+                <input type="number" id="Width of the bottom flange at L/2" placeholder="Width of the bottom flange at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of top flange">Width of top flange:</label>
+                <input type="number" id="Width of top flange" placeholder="Width of top flange" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of top flange at L/2">Width of top flange at L/2:</label>
+                <input type="number" id="Width of top flange at L/2" placeholder="Width of top flange at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of overhang (on left side)">Width of overhang (on left side):</label>
+                <input type="number" id="Width of overhang (on left side)" placeholder="Width of overhang (on left side)" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of overhang (on left side) at L/2">Width of overhang (on left side) at L/2:</label>
+                <input type="number" id="Width of overhang (on left side) at L/2" placeholder="Width of overhang (on left side) at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of overhang (on right side)">Width of overhang (on right side):</label>
+                <input type="number" id="Width of overhang (on right side)" placeholder="Width of overhang (on right side)" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of overhang (on right side) at L/2">Width of overhang (on right side) at L/2:</label>
+                <input type="number" id="Width of overhang (on right side) at L/2" placeholder="Width of overhang (on right side) at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of top flange">Thickness of top flange:</label>
+                <input type="number" id="Thickness of top flange" placeholder="Thickness of top flange" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of top flange at L/2">Thickness of top flange at L/2:</label>
+                <input type="number" id="Thickness of top flange at L/2" placeholder="Thickness of top flange at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of bottom flange">Thickness of bottom flange:</label>
+                <input type="number" id="Thickness of bottom flange" placeholder="Thickness of bottom flange" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of bottom flange at L/2">Thickness of bottom flange at L/2:</label>
+                <input type="number" id="Thickness of bottom flange at L/2" placeholder="Thickness of bottom flange at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of web">Thickness of web:</label>
+                <input type="number" id="Thickness of web" placeholder="Thickness of web" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of web at L/2">Thickness of web at L/2:</label>
+                <input type="number" id="Thickness of web at L/2" placeholder="Thickness of web at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of overhang (on left side) at the end">Thickness of overhang (on left side) at the
+                    end:</label>
+                <input type="number" id="Thickness of overhang (on left side) at the end"
+                    placeholder="Thickness of overhang (on left side) at the end" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of overhang (on left side) at the end at L/2">Thickness of overhang (on left side) at the
+                    end at L/2:</label>
+                <input type="number" id="Thickness of overhang (on left side) at the end at L/2"
+                    placeholder="Thickness of overhang (on left side) at the end at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of overhang (on left side) at web junction">Thickness of overhang (on left side) at web
+                    junction:</label>
+                <input type="number" id="Thickness of overhang (on left side) at web junction"
+                    placeholder="Thickness of overhang (on left side) at web junction" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of overhang (on left side) at web junction at L/2">Thickness of overhang (on left side) at web
+                    junction at L/2:</label>
+                <input type="number" id="Thickness of overhang (on left side) at web junction at L/2"
+                    placeholder="Thickness of overhang (on left side) at web junction at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of overhang  (on right side) at the end">Thickness of overhang (on right side) at the
+                    end:</label>
+                <input type="number" id="Thickness of overhang  (on right side) at the end"
+                    placeholder="Thickness of overhang  (on right side) at the end" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of overhang  (on right side) at the end at L/2">Thickness of overhang (on right side) at the
+                    end at L/2:</label>
+                <input type="number" id="Thickness of overhang  (on right side) at the end at L/2"
+                    placeholder="Thickness of overhang  (on right side) at the end at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of overhang (on right side) at web junction">Thickness of overhang (on right side) at web junction:</label>
+                <input type="number" id="Thickness of overhang (on right side) at web junction" placeholder="Thickness of overhang (on right side) at web junction" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of overhang (on right side) at web junction at L/2">Thickness of overhang (on right side) at web
+                    junction at L/2:</label>
+                <input type="number" id="Thickness of overhang (on right side) at web junction at L/2"
+                    placeholder="Thickness of overhang (on right side) at web junction at L/2" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of edge projecting beyond box girder at the end">Thickness of edge projecting beyond box girder at the end:</label>
+                <input type="number" id="Thickness of edge projecting beyond box girder at the end" placeholder="Thickness of edge projecting beyond box girder at the end" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Thickness of cantilever projection at support">Thickness of cantilever projection at support:</label>
+                <input type="number" id="Thickness of cantilever projection at support" placeholder="Thickness of cantilever projection at support" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of chamfer">Width of chamfer:</label>
+                <input type="number" id="Width of chamfer"
+                    placeholder="Width of chamfer" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Height of chamfer">Height of chamfer:</label>
+                <input type="number" id="Height of chamfer" placeholder="Height of chamfer" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of opening in diaphragm">Width of opening in diaphragm:</label>
+                <input type="number" id="Width of opening in diaphragm" placeholder="Width of opening in diaphragm" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Height of opening in diaphragm">Height of opening in diaphragm:</label>
+                <input type="number" id="Height of opening in diaphragm" placeholder="Height of opening in diaphragm" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Width of chamfer in diaphragm">Width of chamfer in diaphragm:</label>
+                <input type="number" id="Width of chamfer in diaphragm" placeholder="Width of chamfer in diaphragm" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <div>
+                <label for="Height of chamfer in diaphragm">Height of chamfer in diaphragm:</label>
+                <input type="number" id="Height of chamfer in diaphragm" placeholder="Height of chamfer in diaphragm" min=0 step="0.001" oninput="validity.valid||(value='');"><br>
+            </div>
+            <button onclick="calculateProperties()">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="frontend.js"></script>
+</body>
+
